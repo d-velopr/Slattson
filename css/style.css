@@ -681,9 +681,51 @@ a:hover { color: #fff; }
     text-align: center !important;
   }
 }
+/* Slattson Logo on instock pages*/
 .product-page-logo {
   height: 400px;
   width: 100%;
   display: block;
   margin: -100px 0;
+}
+/* ====================== MOBILE FIXES – PURCHASE BUTTON & FOLLOW BUTTON ====================== */
+@media (max-width: 991.98px) {
+  /* 1. Make "PURCHASE NOW" button full-width and perfectly centered on mobile */
+  #purchaseBtn {
+    width: 100% !important;           /* stretches across the whole screen */
+    max-width: 400px;                 /* optional: prevents it from looking too wide on tablets */
+    display: block;
+    margin: 0 auto;                   /* centers the button horizontally */
+    text-align: center;
+  }
+
+  /* If the button is inside a column that’s limiting its width, force the container too */
+  .product-detail-select-size + .row .col #purchaseBtn,
+  .sticky-sidebar .row.g-4 .col .btn {
+    width: 100% !important;
+  }
+
+  /* 2. Add nice bottom spacing before the footer on mobile */
+  .py-4.section-instagram-follow {   /* this section contains the Follow button */
+    padding-bottom: 4rem !important;   /* adds breathing room above the footer */
+  }
+
+  /* Alternative (more precise) – target the Instagram section directly */
+  section.py-4 + .py-3.bg-white.footer-copyright {
+    margin-top: 2rem;   /* extra fallback space if needed */
+  }
+}
+
+/* Extra safety for iPhones (sometimes they need !important) */
+@media (max-width: 768px) {
+  #purchaseBtn {
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Bigger bottom gap under the Instagram "FOLLOW" button */
+  section.py-4 {
+    padding-bottom: 5rem !important;
+  }
 }
