@@ -681,5 +681,9 @@ a:hover { color: #fff; }
     text-align: center !important;
   }
 }
-
-
+.product-page-logo {
+  height: 400px;
+  width: 100%;
+  display: block;
+  margin: -100px 0;
+}
