@@ -1,2 +1,1 @@
-# Slattson Website Online Shop
-## Slattson.com
+# Online Clothing Store Website
