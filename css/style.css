@@ -299,7 +299,7 @@ a {
 
 /* homepage */
 .hero-slider-one {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/slider/);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/misc/na.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -312,7 +312,7 @@ a {
 
 /* collections */
 .bg-collections {
-    background-image: url(../img/bg-collections.jpg);
+    background-image: url(../img/misc/na.png);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -321,7 +321,7 @@ a {
 
 /* collection single */
 .bg-single-collection {
-    background-image: linear-gradient(180deg, transparent 0%, #000000 95%), url(../img/bg-single-collection.jpg) !important;
+    background-image: linear-gradient(180deg, transparent 0%, #000000 95%), url(../img/misc/na.png) !important;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -344,7 +344,7 @@ a {
 
 /* brand */
 .brand-header {
-    background-image: url(../img/brand-building.jpg);
+    background-image: url(../img/misc/na.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -681,12 +681,13 @@ a:hover { color: #fff; }
     text-align: center !important;
   }
 }
-/* Slattson Logo on instock pages*/
+/* Brand logo on in-stock pages */
 .product-page-logo {
-  height: 400px;
+  height: 150px;
   width: 100%;
+  object-fit: contain;
   display: block;
-  margin: -100px 0;
+  margin: 0 auto 16px;
 }
 /* ====================== MOBILE FIXES – PURCHASE BUTTON & FOLLOW BUTTON ====================== */
 @media (max-width: 991.98px) {
