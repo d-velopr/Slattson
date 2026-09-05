@@ -689,6 +689,19 @@ a:hover { color: #fff; }
   display: block;
   margin: 0 auto 16px;
 }
+
+/* On desktop the sidebar's content block is only the left half of the column
+   (the PURCHASE NOW button is w-50), so a column-centred logo drifts right of
+   everything under it. Box the logo to that same half so object-fit centres it
+   over the content block. Below lg the button centres itself, so the full-width
+   rule above already lines the logo up. */
+@media (min-width: 992px) {
+  .product-page-logo {
+    width: 50%;
+    margin-right: auto;
+    margin-left: 0;
+  }
+}
 /* ====================== MOBILE FIXES – PURCHASE BUTTON & FOLLOW BUTTON ====================== */
 @media (max-width: 991.98px) {
   /* 1. Make "PURCHASE NOW" button full-width and perfectly centered on mobile */
